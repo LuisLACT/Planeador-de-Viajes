@@ -1,4 +1,4 @@
-let keyApiDefault = "";
+let keyApiDefault = "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";
 const promt = "Eres guía turístico, desarrolla un itinerario de viaje, indica el hotel y las actividades precisas a realizar como restaurantes, lugares famosos, etc. en cada día de la semana. No incluyas saludos, despedidas ni comentarios finales en tu respuesta. Destino:";
 
 function validar() {
@@ -80,28 +80,28 @@ function procesarResultado(texto) {
     let dia1 = "<div class='tarjetas'><div class='logos' id='logoDia1'></div><h1>Día 1</h1>" + temp1[0] + "</div>";
 
     let temp2 = temp1[1];
-    temp2 = texto.split("Día 3:");
-    let dia2 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia2'></div><h1>Día 2</h1>" + temp2[1] + "</div>";
+    temp2 = temp2.split("Día 3:");
+    let dia2 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia2'></div><h1>Día 2</h1>" + temp2[0] + "</div>";
 
 
     let temp3 = temp2[1];
-    temp3 = texto.split("Día 4:");
-    let dia3 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia3'></div><h1>Día 3</h1>" + temp3[1] + "</div>";
+    temp3 = temp3.split("Día 4:");
+    let dia3 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia3'></div><h1>Día 3</h1>" + temp3[0] + "</div>";
 
 
     let temp4 = temp3[1];
-    temp4 = texto.split("Día 5:");
-    let dia4 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia4'></div><h1>Día 4</h1>" + temp4[1] + "</div>";
+    temp4 = temp4.split("Día 5:");
+    let dia4 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia4'></div><h1>Día 4</h1>" + temp4[0] + "</div>";
 
 
     let temp5 = temp4[1];
-    temp5 = texto.split("Día 6:");
-    let dia5 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia5'></div><h1>Día 5</h1>" + temp5[1] + "</div>";
+    temp5 = temp5.split("Día 6:");
+    let dia5 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia5'></div><h1>Día 5</h1>" + temp5[0] + "</div>";
 
 
     let temp6 = temp5[1];
-    temp6 = texto.split("Día 7:");
-    let dia6 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia6'></div><h1>Día 6</h1>" + temp6[1] + "</div>";
+    temp6 = temp6.split("Día 7:");
+    let dia6 = "<div class='tarjetas espaciado'><div class='logos' id='logoDia6'></div><h1>Día 6</h1>" + temp6[0] + "</div>";
 
 
     let temp7 = temp6[1];
