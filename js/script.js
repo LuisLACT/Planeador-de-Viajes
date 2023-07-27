@@ -1,4 +1,4 @@
-let keyApiDefault = "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";
+let keyApiDefault = "";
 const promt = "Eres guía turístico, desarrolla un itinerario de viaje, indica el hotel y las actividades precisas a realizar como restaurantes, lugares famosos, etc. en cada día de la semana. No incluyas saludos, despedidas ni comentarios finales en tu respuesta. Destino:";
 
 function validar() {
