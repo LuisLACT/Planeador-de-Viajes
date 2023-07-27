@@ -1,0 +1,295 @@
+body {
+    background-color: #a3c4c2;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.general {
+    background-color: #a3c4c2;
+    flex-direction: column;
+}
+
+#contenedorBotonAclaracion {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+#botonAclaraciones {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+#aclaracion {
+    width: 40px;
+    height: 40px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: flex;
+}
+
+#contenedorCarga {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(8, 13, 13, .4);
+    z-index: 999;
+}
+
+#contenedorPerdido {
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(8, 13, 13, .4);
+    z-index: 999;
+}
+
+#contenedorErrorKey {
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(8, 13, 13, .4);
+    z-index: 999;
+}
+
+#contenedorAclaracion {
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(8, 13, 13, .4);
+    z-index: 999;
+}
+
+.contenedorAlertas {
+    flex-direction: column;
+    background-color: #b4a68e;
+    padding-bottom: 40px;
+}
+
+.etiquetas {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.etiquetasTexto {
+    font-size: 18px;
+    margin-left: 4px;
+    margin-bottom: 6px;
+}
+
+#admiaracion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#admiracion {
+    width: 140px;
+    height: 140px;
+}
+
+#importante {
+    font-size: 3vw;
+}
+
+@media (max-width: 768px) {
+    #importante {
+        font-size: 30px;
+    }
+    #admiracion {
+        width: 60px;
+        height: 100px;
+    }
+}
+
+#info {
+    margin-bottom: 20px;
+}
+
+#keyAPI {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #080d0d;
+    border-radius: 20px;
+    min-width: 300px;
+    outline: none;
+    color: white;
+}
+
+#contenedorInputKey {
+    flex-direction: column;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #fff;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#tituloPerdido {
+    width: 50%;
+    padding: auto;
+    text-align: center;
+    background-color: rgb(8, 13, 13, .1);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 40px;
+}
+
+#imgPerdido {
+    width: 250px;
+    height: 250px;
+}
+
+#tituloErrorKey {
+    width: 50%;
+    padding: auto;
+    text-align: center;
+    background-color: rgb(8, 13, 13, .1);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 40px;
+}
+
+#imgErrorKey {
+    width: 250px;
+    height: 250px;
+}
+
+.botonContinuar {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.botones {
+    border: none;
+    border-radius: 5px;
+    background-color: #080d0d;
+    color: white;
+    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.contenedores {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    min-width: 300px;
+}
+
+.contenedorInput {
+    margin-top: 20px;
+    position: sticky;
+    top: 10px;
+}
+
+#avioncito {
+    width: 30px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+#inputDestino {
+    border: none;
+    outline: none;
+    width: 60%;
+    outline: none;
+    font-size: 16px;
+    color: #080d0d;
+    min-width: 200px;
+}
+
+#botonPlanear {
+    font-size: 16px;
+}
+
+#contenedorPlan {
+    margin-top: 40px;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+.tarjetas {
+    background-color: #f3daaa;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.espaciado {
+    margin-top: 20px;
+}
+
+.logos {
+    width: 50px;
+    height: 50px;
+}
+
+#logoDia1 {
+    background-image: url("../img/dia1.svg");
+}
+
+#logoDia2 {
+    background-image: url("../img/dia2.svg");
+}
+
+#logoDia3 {
+    background-image: url("../img/dia3.svg");
+}
+
+#logoDia4 {
+    background-image: url("../img/dia4.svg");
+}
+
+#logoDia5 {
+    background-image: url("../img/dia5.svg");
+}
+
+#logoDia6 {
+    background-image: url("../img/dia6.svg");
+}
+
+#logoDia7 {
+    background-image: url("../img/dia7.svg");
+}
